@@ -26,4 +26,9 @@ class Person
     {
         echo "Author : " . self::AUTHOR . "</br>"; 
     }
+
+    function __destruct()
+    {
+        echo "Nama dari {$this->nama} telah dihapus";
+    }
 }
